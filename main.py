@@ -42,4 +42,4 @@ async def answer_to_question(message: types.Message):  # ответ на воп�
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
-    await message.answer('Бот работает!')
+    await message.answer('Бот начал свою работу!')
