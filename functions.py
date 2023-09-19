@@ -447,7 +447,7 @@ async def sending_question_to_operator(message: types.Message, state: FSMContext
 async def command_answer_operator(message: types.Message):
     if message.chat.id == operators_chat:
         await message.answer('Введите id вопроса в базе данных.')
-        await AnswerOperator.next()
+        await AnswerOperator.question_id.set()
 
 
 @dp.message_handler(state=AnswerOperator.question_id)
