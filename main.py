@@ -1,5 +1,6 @@
 from functions import *
 from comparison import comparison
+from aiogram import executor
 
 
 @dp.message_handler(commands=['start'])
